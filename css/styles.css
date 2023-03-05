@@ -151,6 +151,7 @@ color: var(--maim-btn-active-color);
 }
 .container-footer{
     display: flex;
+    align-items: baseline;
 }
 .container-logo{
     margin-right: 120px;
@@ -185,12 +186,13 @@ color: var(--maim-text-futer-color);
     display: flex;
 justify-content: center;
 margin-top: 16px;
-gap: 24px;
+gap: 16px;
 }
 .footer-spec-item {
 }
 .footer-spec-link {
     display: flex;
+    justify-content: center;
     align-items: center;
   width: 40px;
   height: 40px;
@@ -208,8 +210,13 @@ gap: 24px;
     padding-top: 188px;
     padding-bottom: 188px;
     background-color: var(--maim-title-color) ;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) , url(../images/people-office.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .container-hero{
 display: flex;
@@ -260,11 +267,13 @@ flex-direction: column;
 .benefits-top-item{
     display: flex;
     align-items: center;
+    justify-content: center;
 width: 264px;
 height: 112px;
 background-color: var(--maim-background-fon-color);
 border-radius: 4px;
 }
+
 
 .benefits-list{
     display: flex;
@@ -371,6 +380,7 @@ gap: 24px;
 .team-spec-link{
     display: flex;
     align-items: center;
+    justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -387,7 +397,7 @@ gap: 24px;
 
 }
 /* -----------company----------- */
-.container-compani{
+.company{
     padding-top: 130px;
     padding-bottom: 120px;
 }
@@ -422,25 +432,27 @@ color: var(--maim-title-color);
     height: 100%;
     
 
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--main-campany-color);
     border-radius: 4px;
     color: var(--main-campany-color);
-
+   
 }
 .company-icon {
 fill: currentColor;
+width: 104px;
+height: 56px;
 
 }
 
 .company-link:hover,
 .company-link:focus{
    
-    border: 1px solid   #404BBF;;
+    border: 1px solid   var(--maim-btn-active-color);;
     border-radius: 4px;
 }
 .company-link:hover .company-icon,
 .company-link:focus .company-icon{
-fill:  #404BBF;
+fill:  var(--maim-btn-active-color);
 }
 /* -----------PORTFOLIO----------- */
 /* -----------menu button----------- */
@@ -456,7 +468,7 @@ fill:  #404BBF;
 }
 .btn{
     padding: 12px 24px;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--maim-text-futer-color);
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Roboto';
@@ -486,8 +498,14 @@ background: var(--maim-background-fon-color);
     gap: 24px;
     row-gap: 48px;
 }
+
 .features-item{
     width: 360px;
+}
+.features-item:hover,
+.features-item:focus{
+    border: 0.5px solid var(--maim-background-fon-color);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .features-link>img{
     display: block;
@@ -498,7 +516,7 @@ background: var(--maim-background-fon-color);
 padding-top: 32px;
 padding-left: 16px;
 padding-bottom: 32px;
-border: 1px solid #E7E9FC;
+border: 1px solid var(--maim-text-futer-color);
 
 }
 
