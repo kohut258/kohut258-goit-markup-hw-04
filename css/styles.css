@@ -498,20 +498,23 @@ background: var(--maim-background-fon-color);
     gap: 24px;
     row-gap: 48px;
 }
-
 .features-item{
     width: 360px;
 }
-.features-item:hover,
-.features-item:focus{
-    border: 0.5px solid var(--maim-background-fon-color);
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.features-link{
+    display: block;
 }
+
 .features-link>img{
     display: block;
     max-width: 200%;
     height: auto;
 }
+.features-link:hover,
+.features-link:focus{
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .container-features{
 padding-top: 32px;
 padding-left: 16px;
